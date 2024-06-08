@@ -1,5 +1,4 @@
 # UFA
-Project Title
 Description
 This project is a simple example of using XAMPP for PHP development and Ngrok for testing a Telegram bot locally.
 
