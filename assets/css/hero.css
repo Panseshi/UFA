@@ -1,0 +1,61 @@
+/* hero.css */
+
+.hero-image {
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Pixel size for hero image height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-text form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-control {
+    margin: 10px 0;
+}
+
+.btn-primary {
+    font-weight: bold;
+    color: #fff;
+    background-color: #FF4500;
+    border-color: #FF4500;
+}

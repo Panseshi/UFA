@@ -1,0 +1,26 @@
+/* offers.css */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #666;
+    font-size: 16px;
+    /* Limit the height of card text */
+
+    overflow: hidden;
+}
+
+.card-body {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack child elements vertically */
+    height: 100%; /* Fill the available height */
+}

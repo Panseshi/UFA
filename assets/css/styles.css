@@ -1,0 +1,272 @@
+/* Import Montserrat Thin font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* Color Variables */
+:root {
+    --primary-color: #003366; /* Deep Blue - main brand color */
+    --secondary-color: #66CCCC; /* Light Blue - accent color */
+    --accent-color: #66CC99; /* Green - accent color */
+    --gold-color: #FFD700; /* Gold - accent color */
+    --text-color: #333333; /* Dark Gray - text color */
+    --bg-color: #FFFFFF; /* White - background color */
+    --bg-light-color: #F2F2F2; /* Light Gray - background color */
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: var(--text-color); /* Set text color */
+    background-color: var(--bg-color); /* Set background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--bg-color);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent content overflow */
+    padding: 5px;
+    margin: 5px;
+    position: relative; /* Ensure navbar stays above other content */
+    z-index: 1000; /* High z-index to stay above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between brand and nav items */
+}
+
+.navbar-collapse {
+    position: relative;
+    top: 100%; /* Position the menu below the navbar */
+    left: 0;
+    z-index: 999; /* Ensure the menu appears above other content */
+}
+
+.navbar-brand {
+    font-size: 18px; /* Reduced font size for brand */
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+    line-height: 1; /* Adjusted line height */
+    max-height: 60px; /* Adjusted max-height for brand */
+    vertical-align: middle;
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Reduced max-height for logo */
+    vertical-align: middle;
+    border-radius: 10px;
+    margin-bottom: 5px; /* Reduced margin-bottom for logo */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    max-height: 100%; /* Fill available space */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.navbar-nav li {
+    margin-right: 10px; /* Reduced margin-right for navbar items */
+    max-height: 100%;
+}
+
+.navbar-nav li a {
+    color: #333;
+    font-size: 14px; /* Reduced font size for navbar items */
+    font-weight: bold;
+    line-height: 1;
+    padding: 10px 12px; /* Adjusted padding for navbar items */
+}
+
+
+/* Updated Navbar Brand Styles */
+.navbar-brand {
+    font-size: 18px; /* Set font size */
+    color: var(--primary-color); /* Set brand name color */
+    font-weight: 100; /* Thin font weight */
+    line-height: 1;
+    max-height: 40px; /* Set max height for the navbar brand */
+    vertical-align: middle; /* Vertically align content */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    /* Added styles for modern border */
+    border: 2px solid var(--primary-color); /* Border color matches brand name color */
+    border-radius: 10px; /* Rounded border */
+    padding: 5px 10px; /* Add padding inside the border */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-brand img {
+    max-height: 30px; /* Adjust the max-height for logo */
+    vertical-align: middle; /* Vertically align the logo */
+    border-radius: 5px; /* Adjust border-radius if needed */
+    margin-right: 5px; /* Reduce margin-right between logo and text */
+}
+
+.brand-name {
+    font-size: 1.2rem; /* Adjust the font size for brand name */
+    color: var(--primary-color); /* Set brand name color */
+    font-weight: bold;
+}
+
+/* Media query for medium screens */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0; /* Reset padding for medium screens */
+        margin: 5px auto; /* Center the navbar horizontally */
+    }
+
+    .navbar-brand {
+        margin-right: 0; /* Remove right margin for brand name */
+    }
+}
+
+/* Custom container class without margin */
+.container-no-margin {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 15px; /* Optional: Add padding for content inside the container */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container-no-margin {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Buttons */
+.btn-primary,
+.nav-btn-book-now {
+    background-color: var(--secondary-color); /* Set primary button color */
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary:hover,
+.nav-btn-book-now:hover {
+    background-color: var(--accent-color); /* Set button hover color */
+}
+
+.btn-gold {
+    background-color: var(--gold-color); /* Set gold button color */
+}
+
+/* footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Additional styles for the login page */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.login-form .help-block {
+    color: #dc3545;
+    margin-top: 5px;
+}
+
+.purchase-page {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/*Tours*/
+.tour-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.tour-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tour-item h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tour-item p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.tour-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*User*/

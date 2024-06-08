@@ -1,0 +1,200 @@
+/* Global Styles for Admin Dashboard */
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --primary-color: #2c3e50; /* Dark Blue */
+    --secondary-color: #3498db; /* Light Blue */
+    --accent-color: #2980b9; /* Medium Blue */
+    --text-color: #333333; /* Dark Gray - text color */
+    --bg-color: #ecf0f1; /* Light Gray - background color */
+    --bg-light-color: #ffffff; /* White - light background color */
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .hero-text form {
+        padding: 15px;
+    }
+
+    .form-control,
+    .btn-primary {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--bg-light-color);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px 15px;
+    margin: 5px 0;
+}
+
+.navbar-brand {
+    font-size: 18px; /* Set font size */
+    color: var(--primary-color); /* Set brand name color */
+    font-weight: 100; /* Thin font weight */
+    line-height: 1;
+    max-height: 40px; /* Set max height for the navbar brand */
+    vertical-align: middle; /* Vertically align content */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    /* Added styles for modern border */
+    border: 2px solid var(--primary-color); /* Border color matches brand name color */
+    border-radius: 10px; /* Rounded border */
+    padding: 5px 10px; /* Add padding inside the border */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin-right: 15px;
+}
+
+.navbar-nav li a {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Custom styles for admin dashboard cards */
+.admin-card {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--bg-light-color);
+    margin-bottom: 20px;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.admin-card .card-body {
+    padding: 20px;
+}
+
+.admin-card .card-title {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.admin-card .card-text {
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.admin-card .btn-primary {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-card .btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+/*manage hotels page*/
+/* Style the image to take full width in its cell */
+.image-cell img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image takes full width */
+}
+
+/* Style the delete button to take full width in its cell */
+.action-cell .btn {
+    width: 100%;
+    padding: 5px; /* Add padding for better appearance */
+    display: block;
+}

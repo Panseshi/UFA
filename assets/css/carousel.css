@@ -1,0 +1,29 @@
+/* carousel.css */
+
+/* #hotelCarousel {
+
+} */
+
+#hotelCarousel .carousel-item img {
+    height: 300px; /* Pixel size for carousel item image height */
+    object-fit: cover;
+   border-radius: 10px;
+}
+
+#hotelCarousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+#hotelCarousel .carousel-caption h5 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#hotelCarousel .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
